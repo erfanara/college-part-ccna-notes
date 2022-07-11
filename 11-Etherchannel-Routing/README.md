@@ -11,7 +11,7 @@ created: 2022-06-15 16:01:05Z
 - NIC teaming, port aggregation, port group, ehterchannle
 - Access/trunk 
 	- هر دو نوع پورت قابل etherchannel شدن هستند
-- نوع دو پورت که قرار است etherchannel شوند باید یکی باشد
+- <div dir="auto" align="right" style="text-align: right"> نوع دو پورت که قرار است etherchannel شوند باید یکی باشد
 - ذاتشان هم باید یک باشد
 	- access/duplex/any other config...
 - مراحل:
@@ -26,8 +26,8 @@ created: 2022-06-15 16:01:05Z
 	- `sh etherchannel summery`
 	- `sh span ...`
 	- `int port-channel`
-- از روی قیافه نمی توان لوپ را در گراف شبکه تشخیص داد زیرا ممکن است pvst یا etherchannel باشد
-- الگوریتم های load balance در ehterchannel
+- <div dir="auto" align="right" style="text-align: right"> از روی قیافه نمی توان لوپ را در گراف شبکه تشخیص داد زیرا ممکن است pvst یا etherchannel باشد
+- <div dir="auto" align="right" style="text-align: right"> الگوریتم های load balance در ehterchannel
 - `port-channel load-balance ?`
 	- روش های dst-ip یا src-ip  خیلی روش های خوبی نیستند زیرا اگر برای مثال شبکه یک sender قوی داشته باشیم که در شبکه به صورت تکراری به یک جای تکراری دیتا میفرستد خیلی تغییری در load balancing بار شبکه نمی کند
 	- از همه بهتر src-dst است که اگر سوییچ ما پورت را هم ساپورت کند که دیگه از همه بهتر است
@@ -95,15 +95,15 @@ created: 2022-06-15 16:01:05Z
 	- هر کس که عدد کوچکتری داشته  باشد ، اولویت بالاتری دارد
 	- این عدد را می توان تغییر داد
 	- wikipedia
-- در سیسکو ، برای route های استاتیک از شما در انتها metric نمیپرسد بلکه distance  را می پرسد
+- <div dir="auto" align="right" style="text-align: right"> در سیسکو ، برای route های استاتیک از شما در انتها metric نمیپرسد بلکه distance  را می پرسد
 - انتخابات routing table:
 	1. match
 	2. longest prefix matching
 	3. metric
 	4. select all if all matchs (load balancing)
-- پروتکل ها هر کدام مستقل کار می کنند ، در انتها جدول رویتنگ تصمیم می گیرد که حرف کدام را برای یک  نتورک انتخاب کند ، بر اساس A.D
+- <div dir="auto" align="right" style="text-align: right"> پروتکل ها هر کدام مستقل کار می کنند ، در انتها جدول رویتنگ تصمیم می گیرد که حرف کدام را برای یک  نتورک انتخاب کند ، بر اساس A.D
 - per packet load balancing 
 	- در سیسکو نداریم چون بار پردازشی زیادی دارد
 - load balancing in cisco (routing table)(algorithm , فعال/غیرفعال)
-- هیچ وقت برای یک کامپیوتر ۲ تا gw اضافه نکنید ، زیرا کار نخواهد کرد مگر اینکه متریک یا load balancing داشته باشد. راه بهتر یک gw یا specific static route برای gw دیگر است
+- <div dir="auto" align="right" style="text-align: right"> هیچ وقت برای یک کامپیوتر ۲ تا gw اضافه نکنید ، زیرا کار نخواهد کرد مگر اینکه متریک یا load balancing داشته باشد. راه بهتر یک gw یا specific static route برای gw دیگر است
 ![f60f0a58aca4b35b71f3b014ce732f08.png](../_resources/f60f0a58aca4b35b71f3b014ce732f08.png)
