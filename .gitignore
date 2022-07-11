@@ -1,3 +1,4 @@
 export
 publish.sh
 */*.backup
+*.backup
