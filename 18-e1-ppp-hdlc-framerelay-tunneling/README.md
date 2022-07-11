@@ -47,8 +47,7 @@ fram map ip 192.168.100.3 201
 		* روتی که از اینترفیس X آموختی ،روی اینترفیس X تبلیغ نکن.
 
 - در نتیجه بایستی split horizon را در R1 خاموش کرد:
-	+ `int se 1/0`
-	+ `no ip split-horizon eigrp 1`
-	دریافت شده از روتر مثلا R2 را R3 نیز 
+	- `int se 1/0`
+	- `no ip split-horizon eigrp 1`
 - `no ip split-horizon` 
-	+ اگر این را خالی بزنیم برای RIP است
+	- اگر این را خالی بزنیم برای RIP است
