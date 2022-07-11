@@ -73,9 +73,9 @@
 		+ راه حل: بایستی frame-relay map ها را دستی وارد کنیم
 			1. `(config-subif)# frame-relay map ip 192.168.12.2 102`
 				- error:  Only frame-relay interface-dlci command should beused on point-to-point interfaces not frame-relay map
-				- یعنی روی اینترفیس پوینت تو پوینت نیازی به ip نیست پس دستور ما باید اینگونه باشد:
+				- <div dir="auto" align="right" style="text-align: right"> یعنی روی اینترفیس پوینت تو پوینت نیازی به ip نیست پس دستور ما باید اینگونه باشد:</div>
 				- `frame-relay interface-dlci 102`
-				- بعد از این دستور R2 می تواند بوسیله inverse arp آی پی R1 را بدست آورد و در واقع از R1 جواب دریافت کند.
+				- <div dir="auto" align="right" style="text-align: right"> بعد از این دستور R2 می تواند بوسیله inverse arp آی پی R1 را بدست آورد و در واقع از R1 جواب دریافت کند. </div>
 			2. `(config-subif)# frame-relay map ip 192.168.134.3 103`
 			3. `(config-subif)# frame-relay map ip 192.168.134.4 104`
 			
