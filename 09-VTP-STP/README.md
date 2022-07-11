@@ -52,7 +52,7 @@ altitude: 0.0000
 	2. tell others too
 - vtp client
 	- like vtp server but can't change anything in vlan db
-- یا استفاده از previlage level و تنظیم vtp client می توانیم سوییچ را برای دیگران athorize شده تنظیم کینم
+- با استفاده از previlage level و تنظیم vtp client می توانیم سوییچ را برای دیگران athorize شده تنظیم کینم
 - اگر بدون ساخت vlan در حالت کلاینت ،دستور عضویت اینترفیس در ویلن را بزنیم ، اروری نخواهد داد، اما اگر در کانفیگ نگاه کنیم میبینیم که واقعا اینترفیس ما عضو آن ویلن شده ولی چون در حالت کلاینت است کار نخواهد کرد و در sh vlan brief نشان نخواهد داد
 - transparent mode:
 	1. recives changes but does not apply them on itself
@@ -160,8 +160,8 @@ altitude: 0.0000
 # Quests
 - VTP ver3 differences
 - how to set null domain name for vtp
-- تنظیم پسورد vtp3 و تغییرات بهبود یافته شده نسبت به ورژن های قبلی
-- با استناد به چه قانونی پکت هایی که دچار loop می شوند ، discard/drop می شوند؟
+- <div dir="auto" align="right" style="text-align: right"> تنظیم پسورد vtp3 و تغییرات بهبود یافته شده نسبت به ورژن های قبلی
+- <div dir="auto" align="right" style="text-align: right"> با استناد به چه قانونی پکت هایی که دچار loop می شوند ، discard/drop می شوند؟
 	- loop prevention in switching
 
 # extra
