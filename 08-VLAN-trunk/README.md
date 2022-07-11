@@ -61,7 +61,7 @@ altitude: 0.0000
 # 
 - native vlan -> vlan1
 -  وی لن یک بای دیفالت وجود دارد
--  اگر چند تا سوییچ را دیفالت به هم وصل کنیم هنگی در vlan1 قرار خواهند گرفت
+-  <div dir="auto" align="right" style="text-align: right"> اگر چند تا سوییچ را دیفالت به هم وصل کنیم هنگی در vlan1 قرار خواهند گرفت
 
 # 
 - every vlan group can have a vlan interface that is layer3.
@@ -77,7 +77,7 @@ altitude: 0.0000
 - trunk (vlan encapsulation)
 - 802.1q (+4byte)
 - ISL (+30byte)
-- دیگر نیاز نیست پورت access را برای اتصال vlan های یکسان جدا کنیم
+- <div dir="auto" align="right" style="text-align: right"> دیگر نیاز نیست پورت access را برای اتصال vlan های یکسان جدا کنیم
 - ![f47e2eca6a0ff86b362d3f352b3b2999.png](../_resources/f47e2eca6a0ff86b362d3f352b3b2999.png)
 
 ## 
