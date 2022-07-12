@@ -14,7 +14,7 @@ created: 2022-05-10 11:05:01Z
 
 ---
 - 172.17.128.0/18
-- split to 8 network:
+- split to networks with 8 host:
 
 (128 = 10 000 000)
 
@@ -31,7 +31,7 @@ created: 2022-05-10 11:05:01Z
 --- 
 - 192.168.200.0/22
 
-- slpit to 16 network:
+- slpit to networks with 16 hosts:
 
 (111000 00.00 000000)
 
