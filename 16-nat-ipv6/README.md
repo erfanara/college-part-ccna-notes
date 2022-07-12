@@ -46,4 +46,15 @@ clear ip nat translations *
 - example: `::1/128					(loopback)`		
 - example: `::/0					(default route)`
 - دو قانون خلاصه نویسی ipv6
+
 - 
+![](../_resources/swappy-20220712-234118.png)
+
+-
+![](../_resources/dHDj3-1528603575.jpg)
+
+
+- آي پی anycast را می توان روی چند دیوایس ست کرد؟ مثلا به سرور های وب سرور گوگل می توان در اینترنت یک آی پی کلا داد
+
+- 
+![](../_resources/swappy-20220713-000115.png)
