@@ -32,6 +32,40 @@
 
 
 # application of multilayer switch
+## scenario 1
+
+![](../_resources/swappy-20220715-141811.png)
+
+- in multi-layer switch:
+```
+vlan 10
+vlan 20
+int vlan 10
+ip addr 192.168.10.10 255.255.255.0
+int vlan 20
+ip addr 192.168.10.10 255.255.255.0
+
+int fa 0/0
+switchport mode trunk
+int fa 0/1
+switchport mode trunk
+
+exit
+ip routing
+```
+
+---
+- چند دستور مفید در سوییچ ها:
+```
+sh int stat
+sh vlan br
+sh span vlan
+sh int switchport
+sh int stat err
+```
+---
+
+- روتر ها نیز می توانند اینترفیس هایشان را لایه ۲ ای به هم متصل کنند بوسیله bridge
 
 
 # DHCP
@@ -52,4 +86,40 @@
 	![](../_resources/maxresdefault-380756527.jpg)
 	
 	
-- 
+- چرا فرایند dhcp با چهار پکت انجام می شود؟
+	+ چون ممکن است چند dhcp server در شبکه داشته باشیم
+	
+	
+## cmds
+```
+ip dhcp pool vlan 10
+net 192.168.10.0 255.255.255.0
+default-router 192.168.10.1
+dns-server 8.8.8.8
+domain-name pardp.ir
+option 150 ...
+exit
+
+ip dhcp excluded-range 192.168.10.1 192.168.10.10
+
+sh ip dhcp binding
+clear ip dhcp binding
+
+
+```
+- دی اچ سی پی سرور از کجا می فهمد که باید از کدام pool به کسی آی پی بدهد ؟
+	+ به رنج نتورکی که به آن متصل است و پکت می گیرد نگاه می کند
+- dhcp options list iana
+
+
+## dhcp relay agent
+- `(config-if)# ip helper-agent 192.168.12.1`
+
+![](../_resources/127133.png)
+
+
+# Extra
+- در بسیاری از سناریو ها که نیاز به redundancy بالا داریم دیوایس loopback می تواند خیلی کمک کننده باشد
+- برای مثال در این سناریو اگه ip helper را آی پی دیوایس loopback ست کنیم به جای اینکه آی پی سر اینترفیس لایه core را بگذاریم ، آنگاه اگر یکی از مسیر ها قطع شود مسیر دیگری می تواند ما را به loopback برساند (redundancy)
+
+![](../_resources/swappy-20220716-001534.png)
