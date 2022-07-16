@@ -1,11 +1,3 @@
----
-title: 9-VTP-STP
-updated: 2022-06-21 17:34:50Z
-created: 2022-06-03 05:28:15Z
-latitude: 36.30278015
-longitude: 59.62611008
-altitude: 0.0000
----
 
 - in access ports , it is recommended to disable CDP (from security prespecitve)
 - QOS:
@@ -90,9 +82,10 @@ altitude: 0.0000
 
 ## spec
 - Bridge.id
-	- |16 bit|48 bit|=64 bit|
-	- |------|------|---|
-	- |priority (default at start=32768)|MAC Addr (MAC of Default VLAN interface(somehow MAC addr of switch))|=Bridge.ID|
+
+	 |16 bit|48 bit|=64 bit|
+	 |------|------|---|
+	 |priority (default at start=32768)|MAC Addr (MAC of Default VLAN interface(somehow MAC addr of switch))|=Bridge.ID|
 
 - BPDU (bridge protocol data unit)
 	- every 2s these packets sent from active STP ports

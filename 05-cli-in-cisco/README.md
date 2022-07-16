@@ -1,11 +1,4 @@
----
-title: 5-cli-in-cisco
-updated: 2022-07-09 20:04:42Z
-created: 2022-05-28 05:34:42Z
-latitude: 35.68722153
-longitude: 51.41527939
-altitude: 0.0000
----
+
 
 # cli for cisco
 1. Console
@@ -38,7 +31,7 @@ altitude: 0.0000
 	- اگر جفتش فعال باشد سکرت کار میکند
 - 
 # some cmds
-- sh int status (for switch?)
+- sh int status
 - if prot line (?)
 - no ip domain-lookup
 - sh running-config
