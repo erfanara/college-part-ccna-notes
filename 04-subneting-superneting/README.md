@@ -1,8 +1,3 @@
----
-title: 4-subneting-superneting
-updated: 2022-06-21 17:36:34Z
-created: 2022-05-10 11:05:01Z
----
 
 - APIPA -> 169.254.x.x
 (No DHCP or ip conflict)
@@ -14,7 +9,7 @@ created: 2022-05-10 11:05:01Z
 
 ---
 - 172.17.128.0/18
-- split to networks with 8 host:
+- split to 8 networks:
 
 (128 = 10 000 000)
 
@@ -31,7 +26,7 @@ created: 2022-05-10 11:05:01Z
 --- 
 - 192.168.200.0/22
 
-- slpit to networks with 16 hosts:
+- slpit to 16 networks:
 
 (111000 00.00 000000)
 
@@ -40,8 +35,11 @@ created: 2022-05-10 11:05:01Z
 - 192.168.200.128/26
 - 192.168.200.192/26
 - 192.168.201.0/26
+- ...
 - 192.168.202.0/26
+- ...
 - 192.168.203.0/26
+- ...
 
 
 ---
